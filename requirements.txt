@@ -1,3 +1,3 @@
 bokeh==2.4.2
 pandas==1.3.4
-pyproj==10.0.1
+pyproj==3.3.1
