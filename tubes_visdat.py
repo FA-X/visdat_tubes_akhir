@@ -35,7 +35,7 @@ import warnings
 !gdown --id 1xmiMcvvfxVVTK3Rft536AGpB5l38EdUN
 
 #import dataset
-data = pd.read_csv('covid-19_data.csv')
+data = pd.read_csv("./covid-19_data.csv")
 #mengubah kolom date jadi dataset
 data.set_index('Date', inplace=True)
 
