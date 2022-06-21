@@ -23,7 +23,7 @@ from bokeh.models import DatePicker, Select, ColumnDataSource, ColorBar
 from bokeh.palettes import Spectral6
 from bokeh.models import CategoricalColorMapper
 from bokeh.transform import linear_cmap
-from bokeh.layouts import widgetbox, row
+from bokeh.layouts import widgetbox, row, column, gridplot
 from bokeh.plotting import figure
 from bokeh.tile_providers import get_provider, WIKIMEDIA, CARTODBPOSITRON, STAMEN_TERRAIN, STAMEN_TONER, ESRI_IMAGERY, OSM
 
@@ -133,7 +133,7 @@ data_select.on_change('value', update_plot)
 
 #memasukan seluruh fitur interaktif dan juga plotingan kedalam layout
 layout = row(widgetbox(dPicker, data_select), p) 
-curdoc().add_root(layout)
+curdoc().add_root(column(layout))
 
 """#Penjelasan
 
