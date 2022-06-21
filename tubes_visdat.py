@@ -32,7 +32,7 @@ import warnings
 """#Import dataset"""
 
 #Download dataset
-!gdown --id 1xmiMcvvfxVVTK3Rft536AGpB5l38EdUN
+# !gdown --id 1xmiMcvvfxVVTK3Rft536AGpB5l38EdUN
 
 #import dataset
 data = pd.read_csv("./covid-19_data.csv")
