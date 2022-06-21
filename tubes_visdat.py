@@ -10,7 +10,7 @@ Original file is located at
 """
 
 #install pyproj
-# pip install pyproj
+pip install pyproj
 #define library
 from bokeh.io import curdoc
 from pyproj import Proj, transform
